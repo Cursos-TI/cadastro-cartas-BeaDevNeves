@@ -19,9 +19,9 @@ int main() {
     printf("Digite o nome da sua cidade:");
     scanf("%s, &cidade1");
     printf("Digite o código da sua carta:");
-    scanf("%s", &codigo1);
+    scanf("%s, &codigo1");
     printf("Digite a quantidade de habitantes da sua cidade:");
-    scanf("%d", &populacao1);
+    scanf("%d, &populacao1");
     printf("Digite a area da sua cidade:");
     scanf("%f, &area1");
     printf("Digite o PIB da sua cidade:");
@@ -35,9 +35,9 @@ int main() {
     printf("Digite o nome da sua cidade:");
     scanf("%s, &cidade2");
     printf("Digite o código da sua carta:");
-    scanf("%s", &codigo2);
+    scanf("%s, &codigo2");
     printf("Digite a quantidade de habitantes da sua cidade:");
-    scanf("%d", &populacao2);
+    scanf("%d, &populacao2");
     printf("Digite a area da sua cidade:");
     scanf("%f, &area2");
     printf("Digite o PIB da sua cidade:");
