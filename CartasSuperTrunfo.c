@@ -4,9 +4,9 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-    char estado1[30], estado2[30];
+    char estado1, estado2;
     char cidade1[30], cidade2[30];
-    int codigo1, codigo2;
+    char codigo1[3], codigo2[3];
     int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
@@ -15,35 +15,35 @@ int main() {
   // Área para entrada e saída de dados
           printf("\n Dados da Carta 1 \n");
     printf("Digite a letra inicial do seu estado:");
-    scanf("%c, &estado1");
+    scanf("%c", &estado1);
     printf("Digite o nome da sua cidade:");
-    scanf("%s, &cidade1");
+    scanf("%s", &cidade1);
     printf("Digite o código da sua carta:");
-    scanf("%s, &codigo1");
+    scanf("%s", &codigo1);
     printf("Digite a quantidade de habitantes da sua cidade:");
-    scanf("%d, &populacao1");
+    scanf("%d", &populacao1);
     printf("Digite a area da sua cidade:");
-    scanf("%f, &area1");
+    scanf("%f", &area1);
     printf("Digite o PIB da sua cidade:");
-    scanf("%f, &pib1");
+    scanf("%f", &pib1);
     printf("Digite a quantidade de pontos turisticos da sua cidade:");
-    scanf("%int, &pturistico1");
+    scanf("%d", &pturistico1);
 
           printf("\n Dados da Carta 2 \n");
     printf("Digite a letra inicial do seu estado:");
-    scanf("%c, &estado2");
+    scanf(" %c", &estado2);
     printf("Digite o nome da sua cidade:");
-    scanf("%s, &cidade2");
+    scanf("%s", &cidade2);
     printf("Digite o código da sua carta:");
-    scanf("%s, &codigo2");
+    scanf("%s", &codigo2);
     printf("Digite a quantidade de habitantes da sua cidade:");
-    scanf("%d, &populacao2");
+    scanf("%d", &populacao2);
     printf("Digite a area da sua cidade:");
-    scanf("%f, &area2");
+    scanf("%f", &area2);
     printf("Digite o PIB da sua cidade:");
-    scanf("%f, &pib2");
+    scanf("%f", &pib2);
     printf("Digite a quantidade de pontos turisticos da sua cidade:");
-    scanf("%int, &pturistico2");
+    scanf("%d", &pturistico2);
 
     // Área para exibição dos dados da carta 1 e carta 2 no terminal
           printf("\n Carta 1 \n");
