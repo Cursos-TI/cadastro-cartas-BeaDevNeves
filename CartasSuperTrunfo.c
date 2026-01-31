@@ -7,14 +7,13 @@ int main() {
     char estado1, estado2;
     char cidade1[30], cidade2[30];
     char codigo1[3], codigo2[3];
-    int populacao1, populacao2;
+    unsigned long int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
     int pturistico1, pturistico2;
     float dpopulacional1, dpopulacional2;
     float pibpercapita1, pibpercapita2;
-    float Superpoder1, Superpoder2;
-    int escolhaAtributo; //Variável para fazer as comparações;
+    float Superpoder1, Superpoder2; //Adicionamos Super Poder como atributo
 
   // Área para entrada e saída de dados
           printf("\n Dados da Carta 1 \n");
@@ -25,7 +24,7 @@ int main() {
     printf("Digite o código da sua carta:");
     scanf("%s", &codigo1);
     printf("Digite a quantidade de habitantes da sua cidade:");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
     printf("Digite a area da sua cidade:");
     scanf("%f", &area1);
     printf("Digite o PIB da sua cidade:");
@@ -47,7 +46,7 @@ int main() {
     printf("Digite o código da sua carta:");
     scanf("%s", &codigo2);
     printf("Digite a quantidade de habitantes da sua cidade:");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
     printf("Digite a area da sua cidade:");
     scanf("%f", &area2);
     printf("Digite o PIB da sua cidade:");
@@ -86,6 +85,39 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²", dpopulacional2);
     printf("PIB per Capita: %.2f Bilhões de Reais", pibpercapita2);
     printf("SuperPoder da carta 2: %.2f\n", Superpoder2);
+
+    // Área para comparação das Cartas 1 e 2
+
+          printf("\n Comparação das Cartas 1 e 2 \n");
+      printf("Populção: %s\n", (populacao1 > populacao2) ? "Carta 1 venceu!" :
+               (populacao2 > populacao1) ? "Carta 2 venceu!" :
+                                           "Empate em População!");
+
+printf("Area: %s\n", (area1 > area2) ? "Carta 1 venceu!" :
+               (area2 > area1) ? "Carta 2 venceu!" :
+                                 "Empate em Área!");
+
+printf("Pib: %s\n", (pib1 > pib2) ? "Carta 1 venceu!" :
+               (pib2 > pib1) ? "Carta 2 venceu !" :
+                               "Empate em PIB!");
+
+printf("Pontos Turisticos: %s\n", (pturistico1 > pturistico2) ? "Carta 1 venceu!" :
+               (pturistico2 > pturistico1) ? "Carta 2 venceu!" :
+                                                        "Empate em Pontos Turísticos!");
+
+printf("Pib per Capita: %s\n", (pibpercapita1 > pibpercapita2) ? "Carta 1 venceu!" :
+               (pibpercapita2 > pibpercapita1) ? "Carta 2 venceu!" :
+                                                 "Empate em PIB per Capita!");
+
+// Densidade populacional (menor vence)
+printf("Densidade Populaconal: %s\n", (dpopulacional1 < dpopulacional2) ? "Carta 1 venceu!" :
+               (dpopulacional2 < dpopulacional1) ? "Carta 2 venceu!"  :
+                                                                  "Empate em Densidade Populacional!");
+
+printf("Super Poder: %s\n", (Superpoder1 > Superpoder2) ? "Carta 1 venceu!" : 
+               (Superpoder2 > Superpoder1) ? "Carta 2 venceu !" :
+                                             "Empate em Super Poder!");
+  
 
 
 
