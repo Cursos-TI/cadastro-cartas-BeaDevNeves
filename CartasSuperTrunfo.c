@@ -13,6 +13,8 @@ int main() {
     int pturistico1, pturistico2;
     float dpopulacional1, dpopulacional2;
     float pibpercapita1, pibpercapita2;
+    float Superpoder1, Superpoder2;
+    int escolhaAtributo; //Variável para fazer as comparações;
 
   // Área para entrada e saída de dados
           printf("\n Dados da Carta 1 \n");
@@ -34,6 +36,8 @@ int main() {
     //Área para cálculos da Carta 1
     dpopulacional1 = populacao1 / area1;
     pibpercapita1 = pib1 / populacao1;
+    Superpoder1 = populacao1 + area1 + pturistico1 +
+                     pib1 + pibpercapita1 + (1.0 / dpopulacional1);
 
           printf("\n Dados da Carta 2 \n");
     printf("Digite a letra inicial do seu estado:");
@@ -54,6 +58,8 @@ int main() {
     //Área para cálculos da Carta 2
     dpopulacional2 = populacao2 / area2;
     pibpercapita2 = pib2 / populacao2;
+    Superpoder2 = populacao2 + area2 + pturistico2 +
+                     pib2 + pibpercapita2 + (1.0 / dpopulacional2);
 
     // Área para exibição dos dados da carta 1 e carta 2 no terminal
           printf("\n Carta 1 \n");
@@ -64,8 +70,9 @@ int main() {
     printf("Area: %f\n", area1);
     printf("PIB: %f\n", pib1);
     printf("Pontos  Turisticos: %int\n", pturistico1);
-    pintf("Densidade Ppoulacional: %.2f hab/km²\n", dpopulacional1);
+    pintf("Densidade Populacional: %.2f hab/km²\n", dpopulacional1);
     pirntf("PIB per Capita: %.2fBilhões de Reais\n", pibpercapita1);
+    printf("SuperPoder da carta 1: %.2f\n", Superpoder1);
 
 
           printf("\n Carta 2 \n");
@@ -78,6 +85,7 @@ int main() {
     printf("Pontos  Turisticos: %int\n", pturistico2);
     printf("Densidade Populacional: %.2f hab/km²", dpopulacional2);
     printf("PIB per Capita: %.2f Bilhões de Reais", pibpercapita2);
+    printf("SuperPoder da carta 2: %.2f\n", Superpoder2);
 
 
 
