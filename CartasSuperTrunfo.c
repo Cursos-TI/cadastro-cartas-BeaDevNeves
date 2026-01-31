@@ -32,8 +32,8 @@ int main() {
     scanf("%d", &pturistico1);
 
     //Área para cálculos da Carta 1
-    dpopulacional1 = populacao1 / area1
-    pibpercapita1 = pib1 / populacao1
+    dpopulacional1 = populacao1 / area1;
+    pibpercapita1 = pib1 / populacao1;
 
           printf("\n Dados da Carta 2 \n");
     printf("Digite a letra inicial do seu estado:");
@@ -52,8 +52,8 @@ int main() {
     scanf("%d", &pturistico2);
 
     //Área para cálculos da Carta 2
-    dpopulacional2 = populacao2 / area2
-    pibpercapita2 = pib2 / populacao2
+    dpopulacional2 = populacao2 / area2;
+    pibpercapita2 = pib2 / populacao2;
 
     // Área para exibição dos dados da carta 1 e carta 2 no terminal
           printf("\n Carta 1 \n");
