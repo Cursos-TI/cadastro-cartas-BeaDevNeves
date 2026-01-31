@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
+// última versão. Super Trunfo Nível Mestre Tema 3
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
